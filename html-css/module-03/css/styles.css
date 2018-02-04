@@ -20,7 +20,7 @@ body {
     font-family   : 'Pathway Gothic One';
     color         : #263555;
     font-size     : 25px;
-    margin        : 43 0 33 0;
+    margin        : 43px 0px 33px 0px;
     padding       : 12px 0px 0px 0px;
 }
 /*-------------------------------- */
@@ -66,7 +66,7 @@ h4 {
     width           : 406px;
     height          : 1px;
     background-color: darkgray;
-    padding         : 0;
+    padding         : 0px;
     margin          : 53px 0px 41px 0;
 }
  
