@@ -76,7 +76,6 @@ p {
     margin     : auto;
     font-family: Arial, Helvetica, sans-serif;
     font-variant: normal;
-    font-stretch: stretch;
     font-style  : normal;
     font-weight: 100;
     font-size  : 12px;
@@ -91,9 +90,8 @@ p {
 }
 h4 {
     width       : 406px;
-    color       : #333366;
+    color       : #263555;
     font-family : Arial, Helvetica, sans-serif;
-    font-stretch: normal;
     font-style  : normal;
 	font-weight : 400;
     font-size   : 14px;
