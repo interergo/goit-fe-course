@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "module-04"
+		},
+		{
+			"path": "module-03"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

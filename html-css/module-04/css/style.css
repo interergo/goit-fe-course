@@ -1,5 +1,50 @@
-	body {
-     background-color: rgba(0, 0, 0, 1);   
-    }
-
-	
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.masthead {
+  max-width: 980px;
+  margin: auto;
+  height: 100px;
+  line-height: 100px;
+}
+.mart {
+    float: left;
+    width: 10%;
+}
+.site-navigation {
+    width: 69%;
+    margin-left: 1%;
+    float: right;
+    width: 69%;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    list-style: none;
+    margin-left: 1%;
+    padding-left: 0px;
+}
+.site-navigation li {
+    float: left;
+}
+.site-navigation a {
+    display: block;
+    padding: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* Сработает при hover */
+.site-navigation a:hover {
+    color: #44b6f5;
+}
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .main {
+    max-width: 980px;
+    margin: auto;
+    height: 100px;
+  }
