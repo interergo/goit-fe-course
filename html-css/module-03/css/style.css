@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"');
+* {
+  margin-top: 0px;
+ }
+.top-menu {
+padding: 75px 0;
+margin-bottom: 5px;
+}
+.top-menu ul {
+  text-align: center;
+  padding-left: 0px;
+  margin: 0px;
+}
+.top-menu li {
+display: inline-block;
+margin-right: 8%;
+font: 18px "Playfair Display",sans-serif;
+}
+.top-menu li:nth-last-child(1) {
+margin-right: 0px;
+}
+.top-menu a {
+display        : block;
+background     : none;
+text-decoration: none;
+color          : #626262;
+}
+.top-menu a:hover { 
+color: #44b6f5;
+}
+.wrapper { 
+  text-align: center;
+  margin-right: auto;
+  margin-left : auto;
+  max-width: 960px;
+}
+img {
+  height        : 280px;
+  width         : 420px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.wrapper_ {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  max-width: 470px;
+  margin-right: auto;
+  margin-left : auto;
+  padding-right: 10px;
+  padding-left : 10px;
+}
+footer {
+  position: relative;
+  height: 60px;
+  margin : 15px;
+  font: 14px "Playfair Display",sans-serif;
+  color: #666666;
+}
+button {
+  display         : block;
+  font-size       : 20px;
+  color           : #666666;
+  border          : 1px solid;
+  margin-right : auto;
+  margin-left  : auto;
+  padding : 15px
+}
+.subtitle {
+font: lighter 10px "Ubuntu",sans-serif;
+color: #c8c3b9;
+}
+.caption {
+margin-bottom: 10px;
+font: 30px "Playfair Display",sans-serif;
+color: #666666;
+}
+.main_text{
+margin-bottom: 113px;
+font: 14px "Playfair Display",sans-serif;
+color: #666666;
+}
