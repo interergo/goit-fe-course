@@ -1,28 +1,41 @@
  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body {
+    width: 1170px;
+    margin: auto;
+    height: auto;
+    overflow: auto; 
 }
 .masthead {
-  max-width: 980px;
-  margin: auto;
-  height: 100px;
-  line-height: 100px;
+max-width: 980px;
+margin: auto;
+padding: 10px;
+text-transform: uppercase;
+height: auto;
+overflow: auto
 }
 .mart {
-    float: left;
-    width: 10%;
+float: left;
+vertical-align: middle;
+width: 10%;
+font: 30px "Roboto",sans-serif;
+color: #666666;
+font-weight: 100;
+text-align: center;
 }
 .site-navigation {
-    width: 69%;
     margin-left: 1%;
     float: right;
     width: 69%;
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 14px;
+    font-weight: 100;
     list-style: none;
-    margin-left: 1%;
     padding-left: 0px;
+    color: #000000;
 }
 .site-navigation li {
     float: left;
@@ -33,18 +46,60 @@
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
+    color: #000000;
 }
 /* Сработает при hover */
 .site-navigation a:hover {
     color: #44b6f5;
 }
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .main {
-    max-width: 980px;
-    margin: auto;
-    height: 100px;
-  }
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+.main {
+max-width: 980px;
+margin: auto;
+height: 100px;
+}
+.headline {
+text-align: center;
+/*font-family: 'Roboto', sans-serif;*/
+font: 48px "Roboto",sans-serif;
+color: #666666;
+}
+.item {
+float: left;
+width: 255px;
+height: 330px;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+margin: 15px;
+/* горизонтальное выравнивание текста  */
+text-align: center;
+/* горизонтальное выравнивание текста  */
+border: solid #000000;
+background-color: #323232;
+}
+img {
+    height        : 280px;
+    width         : 255px;
+    padding-bottom: 0px;
+    overflow: auto;
+}
+.gallery .blog {
+    padding: 1px;
+    height: auto;
+    overflow: auto;
+}
+.block2 {
+    float: left;
+    width: 345px;
+    height: 500px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px;
+    /* горизонтальное выравнивание текста  */
+    text-align: center;
+    /* горизонтальное выравнивание текста  */
+    border: solid #000000;
+    }
