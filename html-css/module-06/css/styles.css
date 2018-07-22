@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @media (min-width: 768px) and (max-width: 1200px) { body { background-color: red; } }
+=======
+>>>>>>> ed6861c2e865e0010d920ce37d8caf194c3b3e16
 @font-face {
     font-family: 'Montserrat Bold';
     src: url('Montserrat-ExtraBold.eot');
