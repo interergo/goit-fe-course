@@ -25,4 +25,104 @@
     font-weight: normal;
     font-style: normal;
     }
-.box-name {font-family: 'Montserrat Bold';}
+*   {
+    box-sizing: border-box;
+    padding   : 0;
+    margin    : 0;
+    }
+body {
+    width : 1920px;
+    height: 1665px;
+    }
+.masthead {
+    max-width     : 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding       : 25px 0px 25px 0px;
+    }
+.brand {
+    font-size     : 30px;
+    font-family   : 'Montserrat Bold';
+    color         : #95e1d3;
+    font-weight   : 800;
+    text-align: center;
+    white-space: nowrap;
+    height: 1em;
+    line-height: 1em;
+    }
+.site-navigation {
+    display: flex;
+    font-family   : 'Montserrat Bold', sans-serif, Arial, Helvetica;
+    font-size     : 14px;
+    font-weight   : 300;
+    text-transform : uppercase;
+    vertical-align: middle;
+    }
+nav {
+    height: 1.8em;
+    line-height: 1.8em;
+    }
+.site-navigation a {
+    text-decoration: none;
+    margin-left: 55px;
+    color:#95e1d3; 
+    }
+.site-navigation a:hover {
+    color: #f38181;
+    border-bottom: 2px solid #f38181;
+    }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:   space-around;
+    width: 90%;
+    margin: 10px auto;
+    }
+.item  {
+    margin: 5px;
+    }
+.headline {
+    *width          : 1200px;
+    height         : 290px;
+    display        : block;
+    /*display: flex;
+    justify-content: center;
+    flex-direction : row;
+    color          : #333333;*/
+    }
+.flex-container {
+    margin         : auto auto;
+    display        : flex;
+    justify-content: space-between;
+    }
+.row { 
+    flex-direction: row;
+    }
+/*.main_heading {
+    margin-top    : 200px;
+    padding       : 0px 75px;
+    width         : 900px;
+    height        : 125px;
+    vertical-align: center;
+    }
+span[rel="big"]{
+    letter-spacing: -1px;
+    font-weight   : 700;
+    font-family   : 'Montserrat Bold', sans-serif;
+    font-size     : 60px;
+    color         : #ffffff;
+    }
+span[rel="small"]{
+    font-weight: 800;
+    font-family: 'Kaushan Script Regular', sans-serif;
+    font-size  : 23px;
+    color      : #ffffff;
+    }
+.main_heading > span {
+    display   : block;
+    width     : auto;
+    height    : auto;
+    padding   : 5px 5px 10px;
+    }
