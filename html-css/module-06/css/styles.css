@@ -81,13 +81,22 @@ nav {
     }
 .flex-container {
     display: flex;
-    /*width          : 62.5%;*/
-    flex-direction : column;
+    /*flex-direction : column;
+    flex-wrap      : wrap;*/
+    justify-content: center;
+    margin         : auto auto;
+    justify-content: space-between;
+    }
+article>.flex-container {
     flex-wrap      : wrap;
     justify-content: center;
+    margin         : auto auto;
+    /*justify-content: space-between;*/
     }
 .item  {
-    margin: 0.41665% 1.6665% 0.41665% 0;
+    margin  : 0.41665% 1.6665% 0.41665% 0;
+    cursor  : pointer;
+    position: relative;
     }
 .flex-container > .item:nth-child(3n) {
     margin-right: 0;
@@ -115,10 +124,13 @@ nav {
 .row { 
     flex-direction: row;
     }
+.column {
+    flex-direction: column;
+    }
 .main_heading {
     margin-top    : 0px;
     padding       : 0px 0px;
-    width         : 900px;
+    width         : 1200px;
     vertical-align: center;
     }
 span[rel="big"]{
@@ -158,11 +170,149 @@ span[rel="description"]{
     margin    : 0 auto;
     padding   : 5px 5px 10px;
     }
-.item > img {
-    display: block;
-    float  : left;
-    border : 1px solid #ddd;
-    padding: 5px;
-    width  : 80px;
-    height : 80px;
+.item img {
+    height: 322px;
+    width : 255px;
+    /*position  : absolute;*/
+    top    : 0;
+    left   : 0;
+    width  : 100%;
+    height : 100%;
+    z-index: 0;
+    }
+article>.flex-container>.item > img {
+    display   : block;
+    float     : left;
+    position  : relative;
+    object-fit: none;
+    border    : 1px solid #ddd;
+    padding   : 5px;
+    width     : 80px;
+    height    : 80px;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear  : both;
+    }
+.bottom_container {
+    left  : 15px;
+    height: auto;
+    width : 1200px;
+    }
+.item_container {
+    display: flex;
+    height : 564px;
+    width  : 380px;
+    margin : 0.41665% 2.49999% 0.41665% 0;
+    }
+.icons-wrapper {
+    position: relative;
+    display : flex;
+   /* top            : 12px;
+    left           : 12px;*/
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    width          : 380px;
+    height         : 470px;
+    /*opacity        : 0;*/
+    /*background: rgba(0,0,0,0.3);*/
+    background-color: #95e1d3;
+    transition      : opacity 0.2s ease-in;
+    }
+.icons-wrapper__row {
+    position       : relative;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    /*width           : 75%;*/
+    margin          : 10px 0;
+    background-color: #fbe389;
+    }
+.icon {
+    display    : flex;
+    align-items: center;
+    text-align : center;
+    width      : 56px;
+    height     : 56px;
+    padding    : 10px;
+    /*border          : 1px solid #fff;*/
+    /*fill            : #fff;*/
+    cursor          : pointer;
+    background-color: transparent;
+    transition      : background-color 0.2s ease-in;
+    }
+.icon svg {
+    fill: #fff;
+    }
+.icon:hover {
+    background-color: #95e1d3;
+    border          : none;
+    }
+.icons-wrapper__row--wide {
+    justify-content : flex-start;
+    align-items     : center;
+    border          : 1px solid #fff;
+    background-color: #323232;
+    transition      : background-color 0.3s ease-in;
+    cursor          : pointer;
+    }
+.icons-wrapper__row--wide:hover {
+    background-color: #33cc99;
+    }
+.icons-wrapper__row--wide .icon {
+    border    : 0;
+    background: none;
+    transition: background-color 0.2s ease-in;
+    }   
+.icons-wrapper__row--wide .caption {
+    text-transform: uppercase;
+    margin-left   : 10px;
+    color         : #fff;
+    }
+.bottom_container>.item>img {
+    position: relative;
+}
+.icons-wrapper__row>.icon>img {
+    margin: 0 auto;
+}
+footer {
+    margin-top: 85px;
+}
+.footer_main {
+    width     : 350px;
+    height    : 90px;
+    width     : 50%;
+    margin    : 0 auto;
+    text-align: center;
+    }
+.footer_main h6 {
+    display       : inline-block;
+    vertical-align: middle;
+}
+.footer_main::after {
+    content       : "";
+    display       : inline-block;
+    min-height    : inherit;
+    height        : 100%;
+    vertical-align: middle;
+    }
+.colortext {
+    color: #f38181;
+}
+a.button1 {
+    margin-left    : auto;
+    display        : inline-block;
+    vertical-align : middle;
+    width          : 160px;
+    height         : 51px;
+    font-size      : 16px;
+    font-family    : 'Open Sans', sans-serif;
+    color          : #fff;
+    text-decoration: none;
+    text-align     : center;
+    border-radius  : 3px;
+    background     : #4ec6ab;
+    }
+
